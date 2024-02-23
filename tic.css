@@ -1,12 +1,23 @@
+@font-face {
+    font-family: Game;
+    src: url(prstart.ttf);
+}
+
 body,html{
     margin: 0px;
     color: #000000;
     font-size: 1.3rem;
     overflow: hidden;
 }
-
+#textPlayer{
+    font-family: Game;
+    font-size: x-large;
+}
 .center{
     text-align: center;
+}
+#tic{
+    font-family: Game;
 }
 
 #board {
@@ -32,9 +43,12 @@ body,html{
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
+    font-family: Game;
+    font-size: 18px;
 }
 
 .button {
+    font-family: Game;
     appearance: none;
     background-color: #000000;
     border: 2px solid #1A1A1A;
@@ -66,13 +80,13 @@ body,html{
     width: 15rem;
     border: 3px solid black;
     position: relative;
-    top: 15.5rem;
+    top: 14rem;
 }
 #two{
     width: 15rem;
     border: 3px solid black;
     position: relative;
-    top: 19.5rem;
+    top: 18rem;
 }
 
 #v1 {
@@ -82,7 +96,7 @@ body,html{
     width: 15rem;
     height:4.5px;
     left:27rem;
-    top: 17.8rem;
+    top: 16.5rem;
     border:3px;
 }
 
@@ -93,20 +107,22 @@ body,html{
     width: 15rem;
     height:4.5px;
     left:31.8rem;
-    top: 17.8rem;
+    top: 16.5rem;
     border:3px;
 }
 
 #player1 {
     position: relative;
-    right: 38%;
+    right: 36%;
     bottom: 32rem;
+    font-family: Game;
 }
 
 #player2 {
     position: relative;
     left: 36%;
-    bottom: 35.7rem;
+    bottom: 34.5rem;
+    font-family: Game;
 }
 
 .tile.winning {
