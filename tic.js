@@ -89,4 +89,3 @@ function highlightWinningTiles(combo) {
         tile.classList.add('winning')
     }
 }
-// Not my code
