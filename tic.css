@@ -2,6 +2,7 @@ body,html{
     margin: 0px;
     color: #000000;
     font-size: 1.3rem;
+    overflow: hidden;
 }
 
 .center{
@@ -15,7 +16,6 @@ body,html{
 }
 
 .tile {
-    border: 1px solid white;
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -28,6 +28,7 @@ body,html{
 #board {
     margin: 0 auto;
     display: grid;
+    border: #000000;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
@@ -61,8 +62,55 @@ body,html{
     box-shadow: none;
 }
 
-#one {
-    border-bottom: 10px;
-    border-left: 10px;
-    border-color: #000000;
+#one{
+    width: 15rem;
+    border: 3px solid black;
+    position: relative;
+    top: 15.5rem;
+}
+#two{
+    width: 15rem;
+    border: 3px solid black;
+    position: relative;
+    top: 19.5rem;
+}
+
+#v1 {
+    background-color:#000000;
+    -webkit-transform:rotate(90deg);
+    position:absolute;
+    width: 15rem;
+    height:4.5px;
+    left:27rem;
+    top: 17.8rem;
+    border:3px;
+}
+
+#v2 {
+    background-color:#000000;
+    -webkit-transform:rotate(90deg);
+    position:absolute;
+    width: 15rem;
+    height:4.5px;
+    left:31.8rem;
+    top: 17.8rem;
+    border:3px;
+}
+
+#player1 {
+    position: relative;
+    right: 38%;
+    bottom: 32rem;
+}
+
+#player2 {
+    position: relative;
+    left: 36%;
+    bottom: 35.7rem;
+}
+
+.tile.winning {
+    background-color: rgb(205, 153, 240);
+    color: black;
+    font-weight: bold; 
 }
